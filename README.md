@@ -1,7 +1,7 @@
 # ThaumicHorizons_Localization
 The temporary repository for localization file of Thaumic Horizons.
 
-Welcome to put localization files into here for temporary usage!
+Welcome to put localization files into here for temporary usage! Also, keep in mind that here is NOT the official place to submit lang file! That is why I say "temporary".
 
 Note: en_US is only for reference, DO NOT EDIT unless the mod gets updated.
 
