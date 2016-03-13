@@ -10,6 +10,7 @@ thaumichorizons.golemWarning1=你的一个傀儡看上去有些奇怪.
 thaumichorizons.golemWarning2=你的一个傀儡开始轻声吟诵.
 thaumichorizons.golemWarning3=你听到附近有虚伪的笑声.
 
+
 focus.upgrade.slow.name=缓慢
 focus.upgrade.slow.text=被收容之光击中的任何实体都将在短时间内减速,这使得光束瞄准目标会更加容易.
 focus.upgrade.golemDuration.name=持久
@@ -32,7 +33,6 @@ focus.upgrade.fission.name=灵气裂变
 focus.upgrade.fission.text=这个核心将有20%的几率产生额外一点原始要素的Vis,由其抽取的复合要素的组成决定元始要素的种类.
 focus.upgrade.escape.name=逃逸
 focus.upgrade.escape.text=这块要石可以创造一个来自外域的传送门.
-
 
 critterInfusions.quicksilver=水银之肢
 critterInfusions.thaumClaws=神秘之爪
@@ -84,6 +84,10 @@ entity.ThaumicHorizons.BoatGreatwood.name=宏伟之木船
 entity.ThaumicHorizons.BoatThaumium.name=神秘船
 entity.ThaumicHorizons.MeatSlime.name=肉质史莱姆
 entity.ThaumicHorizons.MercurialSlime.name=水银史莱姆
+entity.ThaumicHorizons.VoltSlime.name=伏特史莱姆
+entity.ThaumicHorizons.MedSlime.name=梅德史莱姆
+entity.ThaumicHorizons.Sheeder.name=Sheeder
+entity.ThaumicHorizons.LostSoul.name=失落之魂
 
 ###POTIONS###
 
@@ -97,6 +101,7 @@ potion.synthesis=光合作用
 
 item.Wand.disposable.rod=水晶质
 item.Wand.disposable.cap=一次性
+
 item.eggIncubated.name=孵化的蛋
 item.lensCase.name=透镜之匣
 item.LensFire.name=火之辉光之镜
@@ -156,6 +161,10 @@ item.keystoneBlank.name=空白异界要石
 item.focusKeystone.name=法杖核心:异界要石
 item.crystalWand.name=惰性水晶杖芯
 item.voidPutty.name=虚空油灰
+item.meatTH.name=迷之肉
+item.meatcookedTH.name=熟的迷之肉
+item.meatnuggetTH.name=迷之肉矿
+item.nodeCheat.name=节点启动器
 
 ###BLOCKS###
 
@@ -178,10 +187,47 @@ tile.ThaumicHorizons_transductionAmplifier.name=传导增幅器
 tile.ThaumicHorizons_recombinator.name=因果重组器
 tile.ThaumicHorizons_vortexStabilizer.name=漩涡弱化设备
 tile.ThaumicHorizons_light.name=光球
-tile.ThaumicHorizons_vortex.name=异界漩涡
+tile.ThaumicHorizons_vortex.0.name=异界漩涡
+tile.ThaumicHorizons_vortex.1.name=异界漩涡(创造)
 tile.ThaumicHorizons_void.name=异界边境
-tile.ThaumicHorizons_cloud.name=云
+tile.ThaumicHorizons_slot.name=楔石容器
+tile.ThaumicHorizons_cloud.0.name=云
+tile.ThaumicHorizons_cloud.1.name=血云
+tile.ThaumicHorizons_cloud.2.name=雷云
+tile.ThaumicHorizons_cloud.3.name=酸云
+tile.ThaumicHorizons_cloud.4.name=合金云
+tile.ThaumicHorizons_cloud.5.name=肿胀云
+tile.ThaumicHorizons_cloud.6.name=活力云
+tile.ThaumicHorizons_cloud.7.name=符文云
+tile.ThaumicHorizons_cloud.8.name=孢子云
+tile.ThaumicHorizons_cloud.9.name=意识云
 tile.ThaumicHorizons_brain.name=大脑团
+tile.ThaumicHorizons_dust.name=尘埃
+tile.ThaumicHorizons_eye.name=眼簇
+tile.ThaumicHorizons_flesh.name=大团肉
+tile.ThaumicHorizons_bone.name=骨
+tile.ThaumicHorizons_spike.name=金属钉
+tile.ThaumicHorizons_spikeWood.name=木钉
+tile.ThaumicHorizons_spikeTooth.name=牙
+tile.ThaumicHorizons_crystal.0.name=白水晶
+tile.ThaumicHorizons_crystal.1.name=橙水晶
+tile.ThaumicHorizons_crystal.2.name=洋红水晶
+tile.ThaumicHorizons_crystal.3.name=亮蓝水晶
+tile.ThaumicHorizons_crystal.4.name=黄水晶
+tile.ThaumicHorizons_crystal.5.name=黄绿水晶
+tile.ThaumicHorizons_crystal.6.name=粉水晶
+tile.ThaumicHorizons_crystal.7.name=灰水晶
+tile.ThaumicHorizons_crystal.8.name=亮灰水晶
+tile.ThaumicHorizons_crystal.9.name=蓝绿水晶
+tile.ThaumicHorizons_crystal.10.name=紫水晶
+tile.ThaumicHorizons_crystal.11.name=蓝水晶
+tile.ThaumicHorizons_crystal.12.name=棕水晶
+tile.ThaumicHorizons_crystal.13.name=绿水晶
+tile.ThaumicHorizons_crystal.14.name=红水晶
+tile.ThaumicHorizons_crystal.15.name=黑水晶
+tile.ThaumicHorizons_deepcrystal.name=深渊水晶
+tile.ThaumicHorizons_leviathan.name=根源化石
+tile.ThaumicHorizons_gateway.name=二向门
 
 ###RESEARCH###
 
@@ -486,3 +532,14 @@ tc.research_text.planarClouds=宽广无垠的天气
 planarClouds1=创造一个口袋异次元放出了一种自时间创生以来就没有被注意到的力,所以毫无疑问,它们经常出现一些普通世界里根本没出现过的现象.<BR>最容易识别的便是异界云,它们是小小的星云,可以同时释放普通的液体和魔法的能量.令人奇怪的是,它们还可以像其它方块一样移动.这些云会和主世界同步保持降雨,这暗示了某种某种模糊不清的宇宙连接.异界云有多种类型,包括下列多种类型.<BR>§5普通§0云只是会喷出水.<BR>§5雷暴§0云会降下蒙蒙细雨,有时还会放出闪电.
 planarClouds2=§5等离子§0云会降下余火,点燃其下方的所有物质和实体.<BR>§5剧毒§0云会降下死亡毒药.<BR>§5肿胀§0云偶尔会存一些肉块.<BR>§5熔炼§0云由沸腾金属组成,它偶尔会掉落一些颗粒.<BR>§5细孔§0云传播各种植物和菌类的种子.<BR>§5魔力§0云保留有部分最初的节点属性并会发射要素球.
 planarClouds3=§5浮雕§0云承载着忘却的记忆,并将其组成经验球的形式.<BR>§5活化§0云会向其下面的方块注入类似生命的物质,并将其转化为短命的傀儡.这些无主的傀儡天性狂暴,但向其附加一个核心便可以使其处于你的控制之下.  
+tc.research_name.sheederInfusion=蛛羊
+tc.research_text.sheederInfusion=一个蜘蛛丝ATM
+sheederInfusion1=蜘蛛丝是一种宝贵的资源,狩猎蜘蛛并不是利用你时间的最好方式.如果能把蜘蛛腺体移植到更温顺的动物身上,或者蜘蛛能更加温顺,你就能获得一个稳定的蜘蛛丝生产.<BR>事实证明,这两种方法都是可行的--有一种被你称为“蛛羊”的羊和蜘蛛的杂种生物. 蛛羊的皮肤生长的是蜘蛛丝而不是羊毛,允许用剪刀收割蜘蛛丝.它的行为像是一只会爬墙的羊.
+tc.research_name.leviathan=原始化石
+tc.research_text.leviathan=来自陌生时代的遗体
+leviathan1=多么奇怪,残酷的发现.看来，虚空并不是像你想象的那么空 - 你的口袋里有一个成型的未知实体的化石残骸.<BR>目前你只能猜测这个远古巨物的本质.你拥有的一些骨头能为他的整体构造提供一些线索,但是他们的魔法属性是惊人的.即使在死亡后他们的脉搏依然跳动,它的内化方式几乎违反了已知的所有神秘法则.
+leviathan2=尽管奇怪,但你坚定不移的认为这些化石都在看着你.每次当你尝试将他们的奇怪力量运用在你的神秘机器上时,原始骨头就通过改变他们的行为方式来让自己变得毫无用处.<BR>也许他们并不像表面上看起来的那么沉寂,并且他们的新陈代谢方式与陆地生物有本质上的不同...这就为他们的觉醒带来了可能.<BR>你必须仔细的观察化石,总有一天你会从他们身上发现新的技术.
+
+tc.research_name.alternateGolemBell=格尔曼之钟
+tc.research_text.alternateGolemBell=集中注意力
+alternateGolemBell1=假如发生mod冲突,这个格尔曼之钟的配方可能会被取代.
